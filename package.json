@@ -1,0 +1,22 @@
+{
+  "name": "log-in-reque",
+  "version": "1.0.0",
+  "description": "Pruebas",
+  "main": "login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adriav/log-in-reque.git"
+  },
+  "keywords": [
+    "no"
+  ],
+  "author": "yo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adriav/log-in-reque/issues"
+  },
+  "homepage": "https://github.com/Adriav/log-in-reque#readme"
+}
