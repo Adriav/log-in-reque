@@ -90,6 +90,9 @@ exports.register = (req, res)=>{
     });
 
     db.query('SELECT email FROM myusers WHERE email = ?', [email], async (error, result)=>{
+        process.on('uncaughtException', function(err){
+            console.log(err);
+        });
         if(error){
             console.log(error);
         }
@@ -106,6 +109,9 @@ exports.register = (req, res)=>{
         
 
         db.query('INSERT INTO myusers SET ?', {email: email, pass: hashPass, fname: fname, lname: lname, phone: phone}, (error, results)=>{
+            process.on('uncaughtException', function(err){
+                console.log(err);
+            });
             if(error){
                 console.log(error);
             }else{
