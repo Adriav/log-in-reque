@@ -43,7 +43,6 @@ app.use('/auth', require('./routes/auth'));
 
 
 // Probar conexion
-<<<<<<< HEAD
 app.set('port',process.env.PORT || 4000);
 process.on('uncaughtException', function(err){
     console.log(err);
