@@ -10,10 +10,17 @@ const app = express();
 
 // DB Connect
 const db = mysql.createConnection({
+    host = 'sql5.freesqldatabase.com',
+    user = 'sql5400498',
+    password = 'EId5dExlNV',
+    database = 'sql5400498'
+    
+    /*
     host: process.env.host,
     user: process.env.user,
     password: process.env.password,
     database: process.env.database
+    */
 });
  db.connect((error) => {
     process.on('uncaughtException', function(err){
