@@ -16,6 +16,9 @@ const db = mysql.createConnection({
     database: process.env.database
 });
  db.connect((error) => {
+    process.on('uncaughtException', function(err){
+        console.log(err);
+    });
     if(error){
         console.log(error);
     } else {
