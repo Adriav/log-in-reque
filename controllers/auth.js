@@ -19,6 +19,9 @@ exports.login = async (req, res)=>{
         }
 
         db.query('SELECT * FROM myusers WHERE email = ?',[email], async(error, results)=>{
+            process.on('uncaughtException', function(err){
+                console.log(err);
+            });
             if(error){
                 console.log(error);
             }
@@ -72,6 +75,9 @@ exports.register = (req, res)=>{
     const phone = parseInt(tel, 10);
 
     db.query('SELECT phone FROM myusers WHERE phone = ?', [phone], (error, result)=>{
+        process.on('uncaughtException', function(err){
+            console.log(err);
+        });
         if(error){
             console.log(error);
         }
