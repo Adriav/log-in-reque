@@ -41,7 +41,9 @@ app.set('view engine', 'hbs');
 app.use('/', require('./routes/pages'));
 app.use('/auth', require('./routes/auth'));
 
+
 // Probar conexion
+<<<<<<< HEAD
 app.set('port',process.env.PORT || 4000);
 process.on('uncaughtException', function(err){
     console.log(err);
@@ -49,3 +51,4 @@ process.on('uncaughtException', function(err){
 app.listen(app.get('port'),() =>{
     console.log('Server on port: ', app.get('port'));
 });
+
