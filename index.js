@@ -41,11 +41,11 @@ app.set('view engine', 'hbs');
 app.use('/', require('./routes/pages'));
 app.use('/auth', require('./routes/auth'));
 
-/*
+
 // Probar conexion
-app.set('port',process.env.PORT || 4000);
+app.set('port',process.env.PORT || 3306);
 
 app.listen(app.get('port'),() =>{
     console.log('Server on port: ', app.get('port'));
 });
-*/
+
