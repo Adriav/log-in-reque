@@ -43,7 +43,7 @@ app.use('/auth', require('./routes/auth'));
 
 
 // Probar conexion
-app.set('port',process.env.PORT || 5506);
+app.set('port',3306);
 process.on('uncaughtException', function(err){
     console.log(err);
 });
